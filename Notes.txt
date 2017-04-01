@@ -1,0 +1,19 @@
+Routing: 
+
+	var express = require('express')
+	var app = express()
+
+setting a route for a get request 
+respond with "hello world" when a GET request is made to 
+'/' represents the home page followed by a call back function
+req - request object 
+res - response object 
+send - sents text to the screen 
+	app.get('/', function(req, res){
+		res.send('hello world'); 
+	}); 
+
+POST method route 
+	app.post('/', function(req, res){
+		res.send('POST request to homepage')
+	}); 
